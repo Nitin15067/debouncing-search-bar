@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #delay-unit {
+            color: blue;
+        }
+        #result {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Set delay in <span id="delay-unit">milliseconds</span>  for debouncing : 
+        <input type="text" name="delay" id="delay" />
+        <button onclick="setDelay()">Set Delay</button>
+        <button onclick="resetDelay()">Reset</button>
+    </p>
+    <p>
+        Search :
+        <input type="text" name="search" id="search" onkeyup="search()" />
+    </p>
+    <p id="result">Please Enter Something!</p>
+
+    <script src="./main.js"></script>
+</body>
+</html>
